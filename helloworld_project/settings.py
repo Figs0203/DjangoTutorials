@@ -15,6 +15,7 @@ import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+PROJECT_DIR = Path(__file__).resolve().parent     # carpeta helloworld_project
 
 
 # Quick-start development settings - unsuitable for production
@@ -71,7 +72,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'helloworld_project.wsgi.application'
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_ROOT = os.path.join(PROJECT_DIR, 'media')
 
 
 # Database
